@@ -14,3 +14,10 @@ That is worth $8.00 USD
 How many Canadian Dollars do you have? 1.25
 That is worth $1.00 USD
 """
+
+x = float(input("How many Canadian Dollars do you have?"))
+y = (x*0.80)
+s1 = "$"
+s2 = str(y)
+s3 = "0"
+print("That is worth", s1 + s2 + s3 , "USD")

@@ -13,3 +13,22 @@ Enter the fift price: 7.99
 Your subtotal is $63.71 and your taxes total $7.65 for a total of $71.36
 
 """
+p1 = float(input("Enter the first price: "))
+p2 = float(input("Enter the second price: "))
+p3 = float(input("Enter the third price: "))
+p4 = float(input("Enter the fourth price: "))
+p5 = float(input("Enter the fifth price: "))
+sb = p1 + p2 + p3 + p4 + p5
+tt = sb * .12
+ft = sb + tt
+sb2 = str(round(sb, 2))
+tt2 = str(round(tt, 2))
+ft2 = str(round(ft, 2))
+
+sb3 = ("$" + str(sb2))
+tt3 = ("$" + str(tt2))
+ft3 = ("$" + str(ft2))
+
+print("Your subtotal is" ,sb3, "and your taxes total" ,tt3, "for a total of" ,ft3,)
+
+
