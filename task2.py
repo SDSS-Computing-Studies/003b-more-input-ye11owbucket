@@ -1,23 +1,23 @@
 #!python3
 """
-Assignment: Exchange rate
-The current exchange rate is 1.25 CAD per 1 USD
-Create a program that asks the user for the number of Canadian Dollars they have
-and then have the program display how many USD that is equivalent to:
-You may need to use rounding or decimal formatting
+A population can be modeled by the following:
+future population = (current population)*(1+r)^(time in years) 
+Have the user enter the current population, the rate of growth as a decimal and the number of DAYS.
+Calculate the expected future population
 
-
-example
-How many Canadian Dollars do you have? 10
-That is worth $8.00 USD
-
-How many Canadian Dollars do you have? 1.25
-That is worth $1.00 USD
+Enter the population: 25000000
+Enter the rate of growth in percent: 2.1
+Enter the number of days: 12
+There will be 25017087 people after 12 days
 """
+import math
 
-x = float(input("How many Canadian Dollars do you have?"))
-y = (x*0.80)
-s1 = "$"
-s2 = str(y)
-s3 = "0"
-print("That is worth", s1 + s2 + s3 , "USD")
+pop = float(input('Enter the population: '))
+rate = float(input('Enter the rate of growth in percent: '))
+r = (rate / 100)
+days0 = float(input('Enter the number of days: '))
+days1 = days0 / 100
+fp = (pop*(1+r)^int(days1 / 365))
+days2 = str(days1)
+
+print("There will be:", fp , "after", days2 ,"days")
