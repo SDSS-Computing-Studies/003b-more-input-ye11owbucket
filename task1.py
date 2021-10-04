@@ -16,12 +16,12 @@ Enter the # of days in the month: 30
 You earned $0.2 interest. 
 (2 points) 
 """
-principal = float(input('Enter your amount: '))
+amount = float(input('Enter your amount: '))
 rate = float(input('Enter the rate: '))
 r = (rate / 100)
 time = float(input('Enter the # of days: '))
-x = int(principal*r*time)/365
-impostor = round(x, 1)
-amogus = ("$" + str(impostor))
-print("You earned:", amogus , "interest")
+x = int(amount*r*time)/365
+i = round(x, 1)
+a = ("$" + str(i))
+print("You earned:", a , "interest.")
 
