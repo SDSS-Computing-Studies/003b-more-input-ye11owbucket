@@ -12,12 +12,9 @@ There will be 25017087 people after 12 days
 """
 import math
 
-pop = float(input('Enter the population: '))
-rate = float(input('Enter the rate of growth in percent: '))
-r = (rate / 100)
-days0 = float(input('Enter the number of days: '))
-days1 = days0 / 100
-fp = (pop*(1+r)^int(days1 / 365))
-days2 = str(days1)
-
-print("There will be:", fp , "after", days2 ,"days")
+population = float(input("Enter the current population: "))
+growth = float(input("Enter the rate of growth: "))
+time = int(input("Enter the time in days: "))
+fp = (population)*(1 + (growth / 100))**(time/365)
+fp = round(fp)
+print(f"There will be {fp} people after {time} days.")
